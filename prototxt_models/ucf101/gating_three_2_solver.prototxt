@@ -1,0 +1,29 @@
+net: "/home/zhujiagang/zjg_code/temporal-segment-networks/models/ucf101/gating_three_2_train_val.prototxt"
+
+# testing parameter
+test_iter: 1
+test_interval: 3500
+test_initialization: true
+
+# output
+display: 20
+average_loss: 20
+snapshot: 75
+snapshot_prefix: "/home/zhujiagang/zjg_code/ucf101_split_1_rgb_flow_models/ucf101_split_1_inception_gating"
+debug_info: false
+
+# learning rate
+base_lr: 0.001
+lr_policy: "fixed"
+#gamma: 0.1
+#stepsize: 1500
+max_iter: 3500
+iter_size: 32
+
+# parameter of SGD
+momentum: 0.9
+weight_decay: 0.0005
+#clip_gradients: 40
+
+# GPU setting
+solver_mode: GPU
